@@ -1,16 +1,10 @@
-# Ping CRM
-
-A demo application to illustrate how Inertia.js works.
-
-![](https://raw.githubusercontent.com/inertiajs/pingcrm/master/screenshot.png)
-
 ## Installation
 
 Clone the repo locally:
 
 ```sh
-git clone https://github.com/inertiajs/pingcrm.git pingcrm
-cd pingcrm
+git clone https://github.com/priyank-hub/Todo-App todoapp
+cd todoapp
 ```
 
 Install PHP dependencies:
@@ -43,22 +37,10 @@ Generate application key:
 php artisan key:generate
 ```
 
-Create an SQLite database. You can also use another database (MySQL, Postgres), simply update your configuration accordingly.
-
-```sh
-touch database/database.sqlite
-```
-
 Run database migrations:
 
 ```sh
 php artisan migrate
-```
-
-Run database seeder:
-
-```sh
-php artisan db:seed
 ```
 
 Run the dev server (the output will give the address):
