@@ -1,7 +1,7 @@
 <template>
   <div>
     <div id="dropdown" />
-    <div class="md:flex md:flex-col">
+    <div class="md:flex md:flex-col font-name">
       <div class="md:flex md:flex-col md:h-screen">
         <div class="md:flex md:flex-shrink-0">
           <div class="flex items-center justify-between px-6 py-4 bg-indigo-900 md:flex-shrink-0 md:justify-center md:w-56">
@@ -76,5 +76,7 @@ export default {
 }
 </script>
 <style scoped>
-
+.font-name {
+  font-family: 'Josefin Sans', sans-serif;
+}
 </style>

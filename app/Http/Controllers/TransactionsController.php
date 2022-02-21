@@ -7,6 +7,7 @@ use App\Models\Transaction;
 use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Support\Facades\Redirect;
+use Carbon\Carbon;
 
 class TransactionsController extends Controller
 {
@@ -29,5 +30,18 @@ class TransactionsController extends Controller
 
         return Redirect::back()->with('error', 'You are not logged In!');
 
+    }
+
+    public function dateChange(Request $request) {
+        
+        $transactions = Transaction::where([
+                'user_id' => Auth::user()->id,
+                'deleted_at' => NULL,
+            ])
+            ->whereDate('created_at', '=', $request->date)
+            ->get();
+
+        dd($transactions);
+        
     }
 }

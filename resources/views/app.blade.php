@@ -14,6 +14,8 @@
 
     <script src="https://kit.fontawesome.com/5652712d20.js" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/flowbite@1.3.4/dist/datepicker.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">

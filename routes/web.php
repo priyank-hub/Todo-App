@@ -52,6 +52,10 @@ Route::get('/', [DashboardController::class, 'index'])
 Route::post('transaction', [TransactionsController::class, 'store'])
 ->name('transaction.store')
 ->middleware('auth');
+
+Route::get('transaction', [TransactionsController::class, 'dateChange'])
+->name('transaction.dateChange')
+->middleware('auth');
 // Users
 
 Route::get('users', [UsersController::class, 'index'])
