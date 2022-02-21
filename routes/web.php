@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ImagesController;
 use App\Http\Controllers\OrganizationsController;
 use App\Http\Controllers\ReportsController;
+use App\Http\Controllers\TransactionsController;
 use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
@@ -48,6 +49,9 @@ Route::get('/', [DashboardController::class, 'index'])
     ->name('dashboard')
     ->middleware('auth');
 
+Route::post('transaction', [TransactionsController::class, 'store'])
+->name('transaction.store')
+->middleware('auth');
 // Users
 
 Route::get('users', [UsersController::class, 'index'])

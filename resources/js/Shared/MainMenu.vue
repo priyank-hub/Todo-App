@@ -8,22 +8,23 @@
     </div>
     <div class="mb-4">
       <Link class="group flex items-center py-3" href="/organizations">
-        <icon name="office" class="mr-2 w-4 h-4" :class="isUrl('organizations') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
-        <div :class="isUrl('organizations') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Organizations</div>
+        <i class="fa-solid fa-money-check-dollar mr-2 w-4 h-4" :class="isUrl('organizations') ? 'text-white' : 'text-indigo-400 group-hover:fill-white'"></i>
+        <div :class="isUrl('organizations') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Expenses</div>
       </Link>
     </div>
     <div class="mb-4">
       <Link class="group flex items-center py-3" href="/contacts">
-        <icon name="users" class="mr-2 w-4 h-4" :class="isUrl('contacts') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
-        <div :class="isUrl('contacts') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Contacts</div>
+        <i class="fa-solid fa-chart-line mr-2 w-4 h-4" :class="isUrl('organizations') ? 'text-white' : 'text-indigo-400 group-hover:fill-white'"></i>
+        <!-- <icon name="users" class="mr-2 w-4 h-4" :class="isUrl('contacts') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" /> -->
+        <div :class="isUrl('contacts') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Analytics</div>
       </Link>
     </div>
-    <div class="mb-4">
+    <!-- <div class="mb-4">
       <Link class="group flex items-center py-3" href="/reports">
         <icon name="printer" class="mr-2 w-4 h-4" :class="isUrl('reports') ? 'fill-white' : 'fill-indigo-400 group-hover:fill-white'" />
         <div :class="isUrl('reports') ? 'text-white' : 'text-indigo-300 group-hover:text-white'">Reports</div>
       </Link>
-    </div>
+    </div> -->
   </div>
 </template>
 

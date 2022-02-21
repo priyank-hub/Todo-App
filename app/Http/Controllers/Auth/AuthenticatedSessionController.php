@@ -43,10 +43,10 @@ class AuthenticatedSessionController extends Controller
 
     public function storeRegister(Request $request) {
         $request->validate([
-            'firstname' => 'required|max:255',
-            'lastname' => 'required|max:255',
-            'email' => 'required|unique:users,email|max:255',
-            'password' => 'required|max:255|min:6'
+            'firstname' => ['required', 'max:255'],
+            'lastname' => ['required', 'max:255'],
+            'email' => ['required', 'unique:users,email', 'max:255'],
+            'password' => ['required', 'min:6', 'max:255']
         ]);
 
         $user = User::create([
